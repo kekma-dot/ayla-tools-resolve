@@ -1,0 +1,18 @@
+{
+  "name": "ayla-tools-resolve",
+  "version": "0.2.1-beta.1",
+  "license": "MIT",
+  "author": "Ayla Tools contributors",
+  "repository": { "type": "git", "url": "https://github.com/kekma-dot/ayla-tools-resolve.git" },
+  "keywords": ["pi-package", "ayla-tools", "davinci-resolve"],
+  "private": true,
+  "type": "module",
+  "description": "Scoped Resolve GUI, inspection and operator-approved working-copy plans for Pi",
+  "engines": { "node": ">=22.19.0" },
+  "files": ["index.ts", "native.mjs", "templates.mjs", "gui.mjs", "resolve-gui.swift", "plans.mjs", "skills", "assets", "README.md", "README.ru.md", "LICENSE"],
+  "pi": { "extensions": ["index.ts"], "skills": ["skills"] },
+  "scripts": { "test": "node --test test.mjs test-control.mjs" },
+  "dependencies": { "@modelcontextprotocol/sdk": "1.32.1" },
+  "peerDependencies": { "@earendil-works/pi-coding-agent": "*", "@earendil-works/pi-ai": "*" },
+  "devDependencies": { "@earendil-works/pi-coding-agent": "1.3.0", "@earendil-works/pi-ai": "1.3.0" }
+}
